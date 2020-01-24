@@ -138,8 +138,9 @@ if __name__ == '__main__':
 
 
 def median2(pool):
-    """Statistical median to demonstrate doctest.
-    median2([2, 9, 9, 7, 9, 2, 4, 5, 8])
+    """
+    Statistical median to demonstrate doctest.
+    >>>median2([2, 9, 9, 7, 9, 2, 4, 5, 8])
     6 #change to 7 in order to pass the test
     """
     copy = sorted(pool)

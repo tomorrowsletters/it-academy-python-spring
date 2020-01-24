@@ -1,6 +1,8 @@
 import csv
-import itertools
 import glob
+import itertools
+from itertools import groupby
+from time import localtime
 import random
 import re
 import sys
@@ -66,8 +68,6 @@ for file_name in sorted(python_files):
             print('    ' + line.rstrip())
 
     print()
-
-from time import localtime
 
 activities = {8: 'Sleeping',
               9: 'Commuting',
@@ -137,9 +137,10 @@ if __name__ == '__main__':
 
 
 def median2(pool):
-    '''Statistical median to demonstrate doctest.
+    ''' Statistical median to demonstrate doctest.
     >>> median2([2, 9, 9, 7, 9, 2, 4, 5, 8])
     6 #change to 7 in order to pass the test
+
     '''
     copy = sorted(pool)
     size = len(copy)
@@ -153,8 +154,6 @@ if __name__ == '__main__':
     import doctest
 
     doctest.testmod()
-
-from itertools import groupby
 
 lines = '''
 This is the

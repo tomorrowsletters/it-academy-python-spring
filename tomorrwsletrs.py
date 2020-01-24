@@ -5,7 +5,7 @@ first paragraph.
 
 This is the second.
 '''.splitlines()
-# Use itertools.groupby and bool to return groups of
+# Use itertools.groupby and bool to return groups of ggggggg
 # consecutive lines that either have content or don't.
 for has_chars, frags in groupby(lines, bool):
     if has_chars:

@@ -142,6 +142,7 @@ def median2(pool):
     Statistical median to demonstrate doctest.
     >>>median2([2, 9, 9, 7, 9, 2, 4, 5, 8])
     6 #change to 7 in order to pass the test
+
     """
     copy = sorted(pool)
     size = len(copy)
@@ -327,6 +328,6 @@ while guesses_made < 6:
 
 if guess == number:
     print('Good job, {0}! You guessed my number in {1} guesses!'.format(name,
-          guesses_made))
+                                                                        guesses_made))
 else:
     print('Nope. The number I was thinking of was {0}'.format(number))

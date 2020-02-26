@@ -1,5 +1,5 @@
 def checkio(text: str) -> str:
-    punctuations = '''!()-[]{};:'"\,0123456789 <>./?@#$%^&*_~'''
+    punctuations = '''!()-[]{};:'",0123456789 <>./?@#$%^&*_~'''
     for chr in text:
         if chr in punctuations:
             text = text.replace(chr, '')

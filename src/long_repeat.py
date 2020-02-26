@@ -6,7 +6,8 @@ def long_repeat(line: str) -> int:
     for i in range(0, len(line) - 1):
         if line[i] == line[i + 1]:
             pom += 1
-            if pom > max: max = pom
+            if pom > max:
+                max = pom
         else:
             pom = 0
     return (max + 1)

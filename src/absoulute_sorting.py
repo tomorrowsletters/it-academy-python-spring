@@ -14,12 +14,10 @@ if __name__ == '__main__':
     print('Example:')
     print(list(checkio((-20, -5, 10, 15))))
 
-
     def check_it(array):
         if not isinstance(array, (list, tuple)):
             raise TypeError("The result should be a list or tuple.")
         return list(array)
-
 
     assert check_it(checkio((-20, -5, 10, 15))) == [-5, 10, 15, -20], \
         "Example"  # or (-5, 10, 15, -20)

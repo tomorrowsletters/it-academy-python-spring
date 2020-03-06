@@ -1,18 +1,10 @@
-dollars = int(input("Dollars"))
-cents = int(input("Cents"))
-count = int(input("Count"))
-
-while cents < 50:
-    c = int((cents * count) % 100)
-    index = c / 10
-    d = int((dollars * count) + index)
-    print(d, "dollars", c, "cents")
-    break
-else:
-    while cents > 50:
-        summaryconvert = (dollars * 100) + cents
-        c = summaryconvert * count
-        rest = int(c % 100)
-        module = int(c // 100)
-        print(module, "dollars", rest, "cents")
-        break
+# 1. Напишите программу, которая считает общую цену.
+# Вводится M рублей и N копеек цена, а также количество L товара.
+# Посчитайте общую цену в рублях и копейках за L товаров.
+dollars = int(input("Dollars: "))
+cents = int(input("Cents: "))
+count = int(input("Count: "))
+summary_count = (dollars * 100 + cents) * count
+cents = summary_count % 100
+dollars = int((summary_count - cents) / 100)
+print(dollars, "dollars", cents, "cents")

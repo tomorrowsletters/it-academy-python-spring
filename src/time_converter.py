@@ -1,3 +1,4 @@
+# Write function that converts 24h format of time to 12h format.
 def time_converter(time):
     time = time.replace(':', ' ')
     time = time.split()

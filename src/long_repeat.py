@@ -1,16 +1,23 @@
+# you should find the length of the longest substring
+# that consists of the same letter.
+# For example, line "aaabbcaaaa" contains four substrings
+# with the same letters "aaa", "bb","c" and "aaaa".
+# The last substring is the longest one, which makes it the answer.
+
+
 def long_repeat(line: str) -> int:
     if line == "":
         return False
     line.lower()
-    max = pom = 0
+    maximum = pom = 0
     for i in range(0, len(line) - 1):
         if line[i] == line[i + 1]:
             pom += 1
-            if pom > max:
-                max = pom
+            if pom > maximum:
+                maximum = pom
         else:
             pom = 0
-    return (max + 1)
+    return maximum + 1
 
 
 if __name__ == '__main__':

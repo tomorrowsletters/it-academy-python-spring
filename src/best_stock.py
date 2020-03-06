@@ -1,3 +1,7 @@
+# You are given the current stock prices.
+# You have to find out which stocks cost more.
+
+
 def best_stock(a):
     biggest = 0
     for i in a:
